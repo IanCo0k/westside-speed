@@ -13,18 +13,17 @@ const ContactSection = () => {
                 Contact Us
               </h2>
               <p className="text-lg md:text-xl mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius lectus et nisi porta, et eleifend
-                lorem placerat. Mauris laoreet neque ac urna luctus, vitae facilisis quam congue.
+               If you are interested in joining our team, please fill out the form below and we will get back to you as soon as possible.
               </p>
             </div>
           </div>
-          <div className="max-w-md mx-auto md:mx-0 w-full md:w-96">
+          <div className="max-w-md mx-auto md:mx-0 w-full md:w-96 bg-green-400 rounded-lg p-6">
             <form>
               <div className="mb-6">
                 <motion.input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full py-3 px-4 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+                  className="w-full py-3 px-4 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
@@ -34,7 +33,7 @@ const ContactSection = () => {
                 <motion.input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full py-3 px-4 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+                  className="w-full py-3 px-4 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
@@ -43,7 +42,7 @@ const ContactSection = () => {
               <div className="mb-6">
                 <motion.textarea
                   placeholder="Your Message"
-                  className="w-full py-3 px-4 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
+                  className="w-full py-3 px-4 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}

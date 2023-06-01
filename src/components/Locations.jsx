@@ -6,14 +6,6 @@ import other from '../assets/other.jpg';
 const Locations = () => {
   const locations = [
     {
-      name: 'The Fit Pit',
-      image: fitpit, // Replace with actual image path for The Fit Pit
-      description: 'From time to time, we will train at The Fit Pit, located in Rockford, Michigan.',
-      finePrint: 'Rockford, Michigan',
-      facebookLink: 'https://www.facebook.com/Thefitpit1/',
-      websiteLink: 'https://thefitpit.net/yoga-1',
-    },
-    {
       name: 'Top Notch Studio',
       image: topnotch, // Replace with actual image path for Top Notch Studio
       description: 'Top Notch Studio is a great place with amazing facilities. Our friends at this studio have kindly allowed us to use their space from time to time!',
@@ -32,7 +24,7 @@ const Locations = () => {
     <section id='locations-section' className="main-bg py-8">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-white font-bold mb-6">Locations</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {locations.map((location) => (
             <div key={location.name} className="bg-gray-800 text-white rounded-lg p-4">
               {location.image && (

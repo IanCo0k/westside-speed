@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import image from '../assets/about.jpg';
+import { Link } from 'react-scroll';
 
 const WhyChooseUsSection = () => {
   return (
@@ -95,22 +96,38 @@ const WhyChooseUsSection = () => {
               </motion.li>
             </ul>
             <div className="text-center mt-12 d-flex justify-between">
-          <motion.button
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 mr-4"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            <Link
+            to="meet-the-owner-section"
+            smooth={true}
+            spy={true}
+            offset={-70}
+            duration={500}
           >
-            Learn More
-          </motion.button>
-          <motion.button
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            <motion.button
+              className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 mx-3 rounded-full transition-colors duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              Learn More
+            </motion.button>
+          </Link>
+          <Link
+            to="contact-section"
+            smooth={true}
+            spy={true}
+            offset={-70}
+            duration={500}
           >
-            Get Started
-          </motion.button>
+            <motion.button
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 mx-3 rounded-full transition-colors duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              Get Started
+            </motion.button>
+          </Link>
         </div>
           </div>
           <div className="md:order-first">

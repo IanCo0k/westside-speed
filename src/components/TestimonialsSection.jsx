@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import test from '../assets/testimonials.svg';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -26,7 +27,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id='testimonials-section' className="main-bg py-24 text-white">
+    <section id='testimonials-section' className="main-bg py-24 text-white" style={{ backgroundImage: `url(${test})`, backgroundSize: 'cover' }}>
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">

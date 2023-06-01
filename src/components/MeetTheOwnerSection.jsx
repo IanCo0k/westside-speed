@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import eli from '../assets/eli.png';
+import bg from '../assets/about-bg.png';
 
 const MeetTheOwnerSection = () => {
   return (
-    <section id='meet-the-owner-section' className="main-bg py-24 text-white">
+    <section id='meet-the-owner-section' className="py-24 text-white" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -14,10 +15,6 @@ const MeetTheOwnerSection = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Meet the Owner
           </h2>
-          <p className="text-lg md:text-xl mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius lectus et nisi porta, et eleifend
-            lorem placerat. Mauris laoreet neque ac urna luctus, vitae facilisis quam congue.
-          </p>
         </motion.div>
         <motion.div
           className="flex flex-col md:flex-row justify-center items-center"
@@ -42,7 +39,7 @@ const MeetTheOwnerSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              John Doe
+              Eli Haddad
             </motion.h3>
             <motion.p
               className="text-lg mb-6"
@@ -50,8 +47,7 @@ const MeetTheOwnerSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius lectus et nisi porta, et eleifend
-              lorem placerat. Mauris laoreet neque ac urna luctus, vitae facilisis quam congue.
+              My name is Eli Haddad, and I have a lifelong passion for fitness and football. I grew up in a family-owned gym, the Fit Pit, where I developed a strong foundation in fitness and a deep appreciation for the benefits of physical training.
             </motion.p>
             <motion.p
               className="text-lg mb-6"
@@ -59,8 +55,7 @@ const MeetTheOwnerSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
-              Sed at dolor sed nisl commodo mattis vel ut lectus. Fusce vitae tincidunt tellus, in tempus est. Integer
-              luctus lorem nec gravida fringilla. Phasellus quis mattis velit.
+              Football has been a significant part of my life. As a wide receiver and safety, I've experienced the thrill of competing on the field and have gained valuable insights into the game. I've also had the opportunity to begin a career in coaching, taking the skills that I learned throughout my playing career and teaching them to the next generation of athletes.
             </motion.p>
             <motion.p
               className="text-lg"
@@ -68,8 +63,7 @@ const MeetTheOwnerSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
             >
-              Quisque sollicitudin nibh id quam convallis, at aliquam sem luctus. Aenean sed risus turpis. Nunc quis
-              venenatis nunc, nec ultrices mi.
+              Today, as the owner of Westside Fitness, I bring my passion and experiences together to help athletes reach their goals. I believe in creating a supportive and empowering environment where athletes can thrive, and I'm committed to helping them unlock their full potential through tailored training and coaching.
             </motion.p>
           </div>
         </motion.div>
