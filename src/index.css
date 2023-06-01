@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --oxford-blue: #0a122aff;
+  --asparagus: #698f3fff;
+  --seasalt: #fbfaf8ff;
+  --bone: #e7decdff;
+  --bole: #804e49ff;
+}
+
+.main-bg{
+  background: #000027;
+}
