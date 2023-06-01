@@ -4,7 +4,7 @@ import eli from '../assets/eli.png';
 
 const MeetTheOwnerSection = () => {
   return (
-    <section className="main-bg py-24 text-white">
+    <section id='meet-the-owner-section' className="main-bg py-24 text-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

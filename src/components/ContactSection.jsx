@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import bg from '../assets/contact-bg.png';
 
 const ContactSection = () => {
   return (
-    <section className="main-bg py-24 text-white">
+    <section id='contact-section' className="py-24 text-white" style={{ background: `url(${bg})`, backgroundPosition: 'center', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)' }}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
@@ -17,7 +18,7 @@ const ContactSection = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-md mx-auto md:mx-0">
+          <div className="max-w-md mx-auto md:mx-0 w-full md:w-96">
             <form>
               <div className="mb-6">
                 <motion.input

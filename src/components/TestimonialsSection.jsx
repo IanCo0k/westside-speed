@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="main-bg py-24 text-white">
+    <section id='testimonials-section' className="main-bg py-24 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">

@@ -4,7 +4,7 @@ import image from '../assets/about.jpg';
 
 const WhyChooseUsSection = () => {
   return (
-    <section className="main-bg py-24 text-white">
+    <section id='why-choose-us-section' className="main-bg py-24 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>

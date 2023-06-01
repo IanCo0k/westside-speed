@@ -5,8 +5,8 @@ import background from '../assets/hero-bg.svg';
 
 const HeroSection = () => {
   return (
-    <section className="hero-section bg-gray-900  text-white py-24">
-      <div className="container mx-auto py-5 px-4">
+    <section id='hero-section' className="hero-section bg-gray-900  text-white py-24">
+      <div className="container mx-auto py-10 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className="md:order-2">
             <motion.img
